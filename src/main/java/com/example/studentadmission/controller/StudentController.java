@@ -41,8 +41,8 @@ public class StudentController {
     @PostMapping("/admission")
     public ResponseEntity<String> addStudent(
             @RequestParam Long studentId,
-            @RequestParam Long CourseId) {
-        return studentService.admission(studentId, CourseId);
+            @RequestParam Long courseId) {
+        return studentService.admission(studentId, courseId);
     }
 }
 
